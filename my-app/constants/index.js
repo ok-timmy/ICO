@@ -1011,4 +1011,4 @@ export const TOKEN_CONTRACT_ABI = [
       "stateMutability": "payable",
       "type": "receive"
     }
-  ],;
+  ];
