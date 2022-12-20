@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./ICryptoDevs.sol";
 
-contract CDToken {
+contract CDToken is ERC20, Ownable{
     //Price of one of the CD Token
     uint256 public constant tokenPrice = 0.001 ether;
      // Each NFT would give the user 10 tokens
@@ -96,4 +96,3 @@ contract CDToken {
       // Fallback function is called when msg.data is not empty
       fallback() external payable {}
   }
-}

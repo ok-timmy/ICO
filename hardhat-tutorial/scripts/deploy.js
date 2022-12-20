@@ -11,7 +11,7 @@ async function main() {
     so cryptoDevsTokenContract here is a factory for instances of our CryptoDevToken contract.
     */
   const cryptoDevsTokenContract = await ethers.getContractFactory(
-    "CryptoDevToken"
+    "CDToken"
   );
 
   // deploy the contract
